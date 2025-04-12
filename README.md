@@ -36,4 +36,4 @@ Durante o desenvolvimento, foram implementadas as seguintes práticas de acessib
 
 ## 🚀 Como visualizar o projeto
 
-[Veja como ficou esse projeto] (https://danieleksantos.github.io/growtravel/)
+[Veja como ficou esse projeto](https://danieleksantos.github.io/growtravel/)
