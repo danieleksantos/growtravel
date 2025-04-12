@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+header{
+    background-color: #4949ce;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.menu ul li a{
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #000000;
+}
+section {
+    padding: 2rem 6rem;
+}
+img {
+    width: 400px;
+}
+
+.growTravel {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    margin: 2rem;
+}
+
+.growTravel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem ;
+    margin: auto 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+ font-size: 2.3rem;
+}
+
+.growTravel-content button{
+    background-color: #4949ce;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: #FFF;
+    font-size: 1rem;
+    margin-top: .8rem;
+    transition: .5s ease-in-out; 
+    outline: none;
+
+}
+
+.growTravel-content button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 95, 204, 0.4);
+    transition: box-shadow 0.3s;
+}
+
+#quem-somos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 4rem 2rem;
+
+}
+
+.quem-somos-content {
+    margin: auto 2.5rem auto 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+hr{
+    border: 1px solid #e6e3e3;
+}
+
+#planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 70%;
+    margin: 2rem 2rem 6rem 2rem;
+}
+
+table, td, th {
+    border: 1px solid #cfcccc;
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+    padding: 2rem;
+}
+
+a:focus,
+button:focus, section:focus {
+  outline: 2px solid #FFF;
+  outline-offset: .5px;
+}
+
+.float-button {
+    position: fixed;
+    float: right;
+    right: 0;
+    bottom: 0;
+} 
+
+.float-button img{
+    width: 40px;
+    margin: 2rem;
+}
