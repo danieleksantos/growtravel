@@ -7,6 +7,7 @@
 
 header{
     background-color: #4949ce;
+    width: 100%;
 }
 
 .menu ul {
@@ -31,27 +32,32 @@ header{
 body {
     background-color: #000000;
 }
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 section {
     padding: 2rem 6rem;
+    display: flex;
 }
 img {
     width: 400px;
 }
 
 .growTravel {
-    display: flex;
-    flex-direction: row; 
+    flex-direction: row-reverse; 
     justify-content: center; 
+    align-items: center;
     margin: 2rem;
+    gap: 2rem;
 }
 
 .growTravel-content {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: .4rem ;
-    margin: auto 2rem;
-    text-align: center;
 }
 
 h1 {
@@ -84,19 +90,16 @@ h2 {
 }
 
 #quem-somos {
-    display: flex;
     flex-direction: row;
     gap: 2rem;
     margin: 4rem 2rem;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .quem-somos-content {
-    margin: auto 2.5rem auto 1rem;
-    display: flex;
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+    min-width: 50%;
 }
 
 hr{
@@ -104,14 +107,14 @@ hr{
 }
 
 #planos {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 }
 
 table {
     width: 70%;
-    margin: 2rem 2rem 6rem 2rem;
+    margin-bottom: 4rem;
 }
 
 table, td, th {
@@ -140,11 +143,56 @@ button:focus, section:focus {
 .float-button {
     position: fixed;
     float: right;
-    right: 0;
-    bottom: 0;
+    right: .5rem;
+    bottom: .5rem;
+    z-index: 1000;
 } 
 
 .float-button img{
     width: 40px;
     margin: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 300px;
+    }
+    .growTravel {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+        text-align: justify;
+        padding: 3rem;
+        margin: 1rem;
+    }
+
+    #quem-somos h2 {
+        font-size: 2rem
+    }
+    
+    table {
+        margin: 2rem;
+    }
+
+    .float-button img{
+        width: 30px;
+        margin: 2rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+    .growTravel {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+        text-align: justify;
+        padding: 3rem;
+        margin: 1rem;
+    }
 }
