@@ -112,8 +112,12 @@ hr{
     gap: 2rem;
 }
 
+#container-table {
+    width: 100%;
+}
+
 table {
-    width: 70%;
+    min-width: 450px;
     margin-bottom: 4rem;
 }
 
@@ -121,6 +125,7 @@ table, td, th {
     border: 1px solid #cfcccc;
     padding: 1rem;
     border-collapse: collapse;
+    margin: 1rem auto;
 }
 
 td, th {
@@ -128,10 +133,15 @@ td, th {
     text-align: center;
 }
 
+tbody th{
+    text-align: left;;
+}
+
 footer {
     text-align: center;
     color: gray;
     padding: 2rem;
+    font-size: 14px;
 }
 
 a:focus,
@@ -157,6 +167,11 @@ button:focus, section:focus {
     img {
         width: 300px;
     }
+
+    section {
+        padding: 2rem;
+    }
+
     .growTravel {
         flex-direction: column; 
         text-align: center;
@@ -173,6 +188,11 @@ button:focus, section:focus {
         font-size: 2rem
     }
     
+    #container-table {
+        overflow-x: scroll;
+        padding: 0 2rem;
+    }
+
     table {
         margin: 2rem;
     }
